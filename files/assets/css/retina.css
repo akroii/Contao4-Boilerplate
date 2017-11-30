@@ -1,0 +1,12 @@
+/* Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	#logo                          {border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;}
+	#logo:active,#logo:focus       {clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto;}
+	header .blue #logo-banner div   {background:url("../../img/logo-blau@2x.png") no-repeat top left;display: block;background-size:88px 39px;width:88px;height:39px;}
+}

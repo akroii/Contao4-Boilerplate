@@ -1,0 +1,12 @@
+/* Typo */
+q                               {display: inline;}
+q:after                         {content: '“';}
+q:before                        {content: '„';}
+body                            {font-size: 1em;font-family:sans-serif,Arial;line-height: 1.5;}
+h1,h2,h3,h4,h5,h6,p             {}
+h1                              {}
+h2                              {}
+h3                              {}
+h4                              {}
+h5                              {}
+h6                              {}

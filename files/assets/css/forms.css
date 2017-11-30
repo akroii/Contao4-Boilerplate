@@ -1,0 +1,32 @@
+/* Forms */
+/* Forms */
+.ce_form .row,.ce_form .select          {}
+.ce_form .widget                        {margin-bottom:15px}
+.ce_form .label                         {}
+.ce_form .label,
+.ce_form input,
+.ce_form select,
+.ce_form textarea                       {}
+.ce_form input[type="text"],
+.ce_form input[type="email"],
+.ce_form input#ctrl_website,
+.ce_form input[type="password"],
+.ce_form input[type="number"],
+.ce_form input[type="search"],
+.ce_form input[type="tel"],
+.ce_form select,
+.ce_form textarea                       {width:100%;}
+.ce_form textarea                       {resize: vertical;}
+.ce_form span.mandatory,
+.ce_form span.mandatory a               {}
+.ce_form input:focus,
+.ce_form input:focus,
+.ce_form textarea:focus                 {}
+.ce_form input.submit                   {}
+.ce_form input.submit:hover             {}
+.ce_form input.submit:focus             {}
+.ce_form input.submit:active            {}
+.ce_form .submit_textlink               {background:transparent;border:0}
+.ce_form .small-input                   {width:50%}
+#ctrl_notify                            {padding:0}
+.submit_container                       {margin-top: 2rem}
