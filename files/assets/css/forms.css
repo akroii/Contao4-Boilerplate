@@ -6,7 +6,7 @@
 .ce_form .label,
 .ce_form input,
 .ce_form select,
-.ce_form textarea                       {}
+.ce_form textarea                       {padding: 5px 14px;border-radius:4px;border:1px solid #ccc}
 .ce_form input[type="text"],
 .ce_form input[type="email"],
 .ce_form input#ctrl_website,
@@ -29,4 +29,5 @@
 .ce_form .submit_textlink               {background:transparent;border:0}
 .ce_form .small-input                   {width:50%}
 #ctrl_notify                            {padding:0}
+.large__forms input                     {font-size:2.2rem}
 .submit_container                       {margin-top: 2rem}
