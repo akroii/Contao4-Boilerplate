@@ -22,10 +22,10 @@
 .ce_form input:focus,
 .ce_form input:focus,
 .ce_form textarea:focus                 {}
-.ce_form button.submit                   {}
-.ce_form input.button:hover             {}
-.ce_form input.button:focus             {}
-.ce_form input.button:active            {}
+.ce_form input.submit                   {}
+.ce_form input.submit:hover             {}
+.ce_form input.submit:focus             {}
+.ce_form input.submit:active            {}
 .ce_form .submit_textlink               {background:transparent;border:0}
 .ce_form .small-input                   {width:50%}
 #ctrl_notify                            {padding:0}
