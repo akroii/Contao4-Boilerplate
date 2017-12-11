@@ -1,8 +1,11 @@
 /* Fix */
+::-webkit-input-placeholder,#placeholder {color: #f3f1ee;}
+:-ms-input-placeholder {color: #f3f1ee;}
+::-moz-placeholder { color: #f3f1ee;opacity: 1;}
+:-moz-placeholder {color: #f3f1ee;opacity: 1;}
 img                                     {display: block;font-family: Helvetica, Arial, sans-serif;font-weight: 300;height: auto;line-height: 2;position: relative;text-align: center;width: 100%;}
 video[autoplay]:not([muted])            {display: none;}
-/*Mobile Forms Fix*/
-input[type="text"]
+input[type="text"],
 input[type="url"],
 input[type="number"],
 input[type="search"],
@@ -10,11 +13,13 @@ input[type="tel"],
 input[type="submit"],
 select,
 input[type="email"], textarea           {-webkit-appearance: none;-webkit-border-radius: 0;-moz-appearance: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
-input:-webkit-autofill                  {-webkit-box-shadow: 0 0 0px 1000px white inset;}
+input:-webkit-autofill                  {-webkit-box-shadow: 0 0 0 1000px white inset;}
 .ce_gallery.nospacing                   {vertical-align:bottom;font-size:0}
 input:focus,
 select:focus,
 textarea:focus,
 button:focus                            {outline: none;}
 .ce_form .checkbox                      {-webkit-appearance:normal;}
-figure                                  {line-height:0}
+figure                                  {line-height:0;}
+hr                                      {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
+textarea                                {resize: vertical;}
