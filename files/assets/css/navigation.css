@@ -11,3 +11,9 @@ a                           {text-decoration:none}
 .submenu                    {}
 .submenu li                 {}
 .submenu li a               {}
+.readmore,.more a,.back a           {color:#e62e25;position: relative;}
+.readmore:hover,.more a:hover,
+.back a:hover                       {color:#b52a22}
+.readmore:focus,.more a:focus,
+.back a:focus                       {top:1px}
+.info                               {color: #7c7c7c}
