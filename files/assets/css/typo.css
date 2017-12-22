@@ -1,5 +1,6 @@
 /* Typo */
 q                               {display: inline;}
+:lang(de)                       {quotes: "„" "“"}
 q:after                         {content: '“';}
 q:before                        {content: '„';}
 body                            {font-size: 1em;font-family:sans-serif,Arial;line-height: 1.5;}
