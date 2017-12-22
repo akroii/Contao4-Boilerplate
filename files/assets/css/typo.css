@@ -3,7 +3,16 @@ q                               {display: inline;}
 :lang(de)                       {quotes: "„" "“"}
 q:after                         {content: '“';}
 q:before                        {content: '„';}
-body                            {font-size: 1em;font-family:sans-serif,Arial;line-height: 1.5;}
+p                               {margin:0 0 1rem}
+p:last-child                    {margin-bottom: 0}
+p a                             {color:#e62e25}
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6                          {margin-top: 3rem}
+:lang(de)                       {quotes: "„" "“";}
+
 h1,h2,h3,h4,h5,h6,p             {}
 h1                              {}
 h2                              {}
