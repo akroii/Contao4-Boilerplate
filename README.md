@@ -18,9 +18,8 @@ I will add more features in future...
 6. `parameters.yml`, `localconfig.php`, `langconfig.php`, `dcaconfig.php`auf den Server übertragen bei `[root]/system/modules/config` hochladen und Datenbankinformationen des Zielservers anpassen
 7. Evtl. Contao Erweiterungen 3.x Erweiterungen in das `[root]/system/modules` übertragen
 8. `files`, `templates`-Verzeichnis auf den Server übertragen
-9. `contao-manager.phar.php` aufrufen und Cache neu erstellen -> oder per ssh: `vendor/bin/contao-console cache:clear --no-warmup`
-10. Frische `composer.phar` per ssh herunterladen: `curl -sS https://getcomposer.org/installer | php`
-11. `composer.lock` der lokalen Installation auf den Server ins `[root]`-Verzeichnis laden
-12. falls Fehler auftritt: `php composer.phar install --ignore-platform-reqs`
-13. `rm -rf var/cache/*`
-14. ggf. Cache neu erstellen: `vendor/bin/contao-console cache:clear --no-warmup`
+9. Frische `composer.phar` per ssh herunterladen: `curl -sS https://getcomposer.org/installer | php`
+10. `composer.lock`, `composer.json` der lokalen Installation auf den Server ins `[root]`-Verzeichnis laden
+11. falls Fehler auftritt: `php composer.phar install --ignore-platform-reqs`
+12. `rm -rf var/cache/*`
+13. ggf. Cache neu erstellen: `vendor/bin/contao-console cache:clear --no-warmup`
