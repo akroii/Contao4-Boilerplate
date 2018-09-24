@@ -34,7 +34,7 @@ img, video                          {display:inline-block;vertical-align: middle
 a img,img                           {display:block;}
 a                                   {}
 hr                                  {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
-body                                {min-width:320px;word-wrap: break-word;}
+body                                {min-width:320px;}
 
 /* Procedural */
 
