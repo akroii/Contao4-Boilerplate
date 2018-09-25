@@ -1,19 +1,27 @@
 /* Navigation */
-a                           {text-decoration:none}
-.mainnav.unstyled ul,
-.submenu.unstyled ul        {margin:0;padding:0}
-
-.mainnav                    {}
-.mainnav li                 {}
+a                                   {text-decoration:underline}
+.mainnav                            {}
+.mainnav ul                         {text-align: center;}
+.mainnav li                         {display:inline-block;}
 .mainnav li a,
-.mainnav li span            {}
+.mainnav li strong                  {padding:10px;display:block}
+.mainnav a:hover,
+.mainnav strong,
+.mainnav a.trail                    {}
 
-.submenu                    {}
-.submenu li                 {}
-.submenu li a               {}
-.readmore,.more a,.back a           {color:#e62e25;position: relative;}
+.submenu                            {}
+.submenu li                         {}
+.submenu li a,
+.submenu li strong                  {padding:10px 10px;display:block;}
+.submenu a                          {}
+.submenu a:hover,
+.submenu strong.active              {}
+.readmore,.more a,.back a           {position: relative;}
 .readmore:hover,.more a:hover,
-.back a:hover                       {color:#b52a22}
+.back a:hover                       {}
 .readmore:focus,.more a:focus,
 .back a:focus                       {top:1px}
-.info                               {color: #7c7c7c}
+.info                               {}
+#footer .mod_customnav a            {padding:0 15px}
+#footer .mod_customnav a:hover      {text-decoration: underline}
+#footer .mod_customnav              {text-align:center;margin:2em 0 2em}

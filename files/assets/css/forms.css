@@ -1,7 +1,8 @@
 /* Forms */
 .ce_form .row,.ce_form .select          {}
 .ce_form .widget                        {margin-bottom:15px}
-.ce_form .label                         {}
+.ce_form .label,
+.ce_form label                          {}
 .ce_form .label,
 .ce_form input,
 .ce_form select,
@@ -23,17 +24,23 @@
 .ce_form input:focus,
 .ce_form input:focus,
 .ce_form textarea:focus                 {}
-.ce_form fieldset                       {border: 1px solid #e2dcd5;background: #efebe5;}
-.ce_form input.submit                   {}
-.ce_form input.submit:hover             {}
-.ce_form input.submit:focus             {}
-.ce_form input.submit:active            {}
-.ce_form button.submit                  {}
-.ce_form button:hover                   {}
-.ce_form button:focus                   {}
+.ce_form fieldset,.ce_form .submit,
+.ce_form input[type="submit"]           {border: 1px solid #e2dcd5;background: #efebe5;}
+.ce_form .submit,
+.ce_form input[type="submit"]           {font-size: 1rem;cursor: pointer;border: 0;-webkit-border-radius: 4;-moz-border-radius: 4; border-radius: 4px;padding: 10px 20px 10px 20px;text-decoration: none;display: inline-block;}
+.ce_form .submit:hover,
+.ce_form button.submit:hover            {background:#e2dcd5}
+.ce_form .submit:focus,
+.ce_form button:focus,
+.ce_form .submit:active,
 .ce_form button:active                  {}
 .ce_form .submit_textlink               {background:transparent;border:0}
 .ce_form .small-input                   {width:50%}
+.ce_form a,.ce_form .submit,
+.ce_form input[type="submit"]           {color:#d17a0a;font-family: "atrotissansserifextrabold", Tahoma, sans-serif}
+.ce_form .submit_textlink               {background:transparent;border:0}
+.ce_form .small-input                   {width:50%}
+.gdpr label                             {}
 #ctrl_notify                            {padding:0}
 .large__forms input                     {font-size:2.2rem}
 .submit_container                       {margin-top: 2rem}
