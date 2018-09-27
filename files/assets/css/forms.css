@@ -6,7 +6,7 @@
 .ce_form .label,
 .ce_form input,
 .ce_form select,
-.ce_form textarea                       {padding: 5px 14px;border-radius:4px;border:1px solid #ccc}
+.ce_form textarea                       {padding: 5px 14px;border-radius:4px;border:1px solid #ccc;display:block;}
 .ce_form input[type="text"],
 .ce_form input[type="email"],
 .ce_form input#ctrl_website,
