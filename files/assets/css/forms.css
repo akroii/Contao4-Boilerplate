@@ -35,13 +35,12 @@
 .ce_form .submit:active,
 .ce_form button:active                  {}
 .ce_form .submit_textlink               {background:transparent;border:0}
-.ce_form .small-input                   {width:50%}
 .ce_form a,.ce_form .submit,
 .ce_form input[type="submit"]           {color:#d17a0a;font-family: "atrotissansserifextrabold", Tahoma, sans-serif}
 .ce_form .submit_textlink               {background:transparent;border:0}
 .ce_form .small-input input,
 .ce_form .small-input select,
-.ce_form .small-input textarea          {width:50%}
+.ce_form .small-input textarea          {width:100%}
 .gdpr label                             {}
 #ctrl_notify                            {padding:0}
 .large__forms input                     {font-size:2.2rem}

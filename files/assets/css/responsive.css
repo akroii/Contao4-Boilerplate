@@ -6,7 +6,9 @@
 
 }
 @media screen and (min-width: 992px)               {
-
+.ce_form .small-input input,
+.ce_form .small-input select,
+.ce_form .small-input textarea          {width:100%}
 }
 @media screen and (min-width: 1200px)              {
 
