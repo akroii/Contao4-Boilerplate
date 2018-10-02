@@ -15,10 +15,10 @@ By default form templates was beeing marked with a star. Now, only fields which 
 7. files/assets/css/forms.css
 8. files/assets/css/navigation.css
 9. files/assets/css/typo.css
-10.files/assets/css/breadcrumb.css
-11.files/assets/css/style.css
-12.files/assets/css/lists.css
-13.files/assets/css/responsive.css
+10. files/assets/css/breadcrumb.css
+11. files/assets/css/style.css
+12. files/assets/css/lists.css
+13. files/assets/css/responsive.css
 
 
 
