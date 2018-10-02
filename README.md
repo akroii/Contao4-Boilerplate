@@ -15,10 +15,11 @@ files/assets/css/fix.css
 files/assets/css/forms.css
 files/assets/css/navigation.css
 files/assets/css/typo.css
-files/assets/css/breadcrumb.css <
+files/assets/css/breadcrumb.css
 files/assets/css/style.css
-files/assets/css/lists.css <s
+files/assets/css/lists.css
 files/assets/css/responsive.css
+
 
 
 
