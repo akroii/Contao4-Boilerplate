@@ -23,6 +23,7 @@
 .image-wrapper                      {width: 90%;height: 0;padding-bottom: 66.67%;position: relative;} /* Padding bottom hack */
 .image-wrapper img                  {width: 100%;position: absolute;}
 .spaceBelow .image_container        {margin-bottom:1em}
+.truncate                           {width: inherit;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 
 /* Global */
 html                                {box-sizing: border-box;}
