@@ -1,0 +1,21 @@
+# Contao configuration
+contao:
+    url_suffix: ''
+    image:
+        imagine_options:
+            jpeg_quality: 100
+# Security configuration
+nelmio_security:
+    clickjacking:
+        paths:
+            '^/.*': ALLOW
+    content_type:
+        nosniff: false
+    referrer_policy:
+        enabled: true
+        policies:
+            - 'no-referrer-when-downgrade'
+            - 'strict-origin-when-cross-origin'
+    xss_protection:
+        enabled: true
+        mode_block: true
