@@ -1,0 +1,26 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/js.cookie.min.js';?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/jquery.cookiecuttr.min.js';?>
+
+<?php $GLOBALS['TL_CSS'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/css/cookiecuttr.css';?>
+
+<?php $GLOBALS['TL_BODY'][] = "
+<!-- Cookie -->
+<script>
+$(document).ready(function () {
+  $.cookieCuttr({
+    cookieAnalytics: false,
+    cookiePolicyPage: true,
+    cookieDeclineButton: true,
+    cookieAcceptButtonText: 'Verstanden',
+    cookieDeclineButtonText: 'Schließen',
+    cookieDiscreetLink: true,
+    cookiePolicyPageMessage: 'Wir verwenden Cookies. Erfahren Sie mehr über den <a href=\"/datenschutz\" title=\"Datenschutzerklärung ansehen\">Datenschutz</a> und die <a title=\"Cookie-Richtlinien ansehen\" href=\"/cookies\">Cookie-Richtlinien</a>'
+  });
+if (jQuery.cookie('cc_cookie_accept') == \"cc_cookie_accept\") {
+	console.log(\"cookies accepted\");
+}else{
+    console.log('cookies not accepted');
+}
+});
+</script>";
+?>
