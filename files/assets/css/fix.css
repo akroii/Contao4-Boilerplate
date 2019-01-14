@@ -1,8 +1,8 @@
 /* Fix */
-::-webkit-input-placeholder,#placeholder {color: #f3f1ee;}
-:-ms-input-placeholder {color: #f3f1ee;}
-::-moz-placeholder { color: #f3f1ee;opacity: 1;}
-:-moz-placeholder {color: #f3f1ee;opacity: 1;}
+::-webkit-input-placeholder,#placeholder{color: #f3f1ee;}
+:-ms-input-placeholder                  {color: #f3f1ee;}
+::-moz-placeholder                      {color: #f3f1ee;opacity: 1;}
+:-moz-placeholder                       {color: #f3f1ee;opacity: 1;}
 img                                     {display: block;font-family: Helvetica, Arial, sans-serif;font-weight: 300;height: auto;line-height: 2;position: relative;text-align: center;width: 100%;}
 video[autoplay]:not([muted])            {display: none;}
 input[type="text"],
@@ -23,3 +23,4 @@ button:focus                            {outline: none;}
 figure                                  {line-height:0;}
 hr                                      {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
 textarea                                {resize: vertical;}
+button                                  {background: none;border: 0;}
