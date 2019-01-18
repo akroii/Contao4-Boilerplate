@@ -1,0 +1,16 @@
+imports:
+    - { resource: config.yml }
+
+# Features des Profilers deaktiveren
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+
+# Den gesamten Profiler deaktivieren, obige Einstellungen sind dann obsolet
+framework:
+    profiler: false
+
+# Die Ausgabe der Exception vereinfachen
+services:
+  twig.exception_listener:
+    class: stdObject
