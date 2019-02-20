@@ -24,7 +24,7 @@
 .image-wrapper img                  {width: 100%;position: absolute;}
 .spaceBelow .image_container        {margin-bottom:1em}
 .truncate                           {width: inherit;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
-
+#map                                {width:100%;height:500px}
 /* Global */
 html                                {box-sizing: border-box;}
 *, *:before, *:after                {box-sizing: inherit;}
