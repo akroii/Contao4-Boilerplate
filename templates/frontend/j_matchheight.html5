@@ -1,0 +1,13 @@
+<?php $GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/assets/js/jquery.matchHeight.min.js|static';?>
+
+<?php $GLOBALS['TL_BODY'][] = '<script>
+$(function() {
+
+        $(\'.syncHeight\').matchHeight({
+            byRow: true
+        });
+
+});
+</script>'
+;?>
+

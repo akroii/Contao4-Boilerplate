@@ -1,0 +1,1 @@
+<?php echo \Input::get('my_get_variable');

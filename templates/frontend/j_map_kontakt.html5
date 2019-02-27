@@ -4,7 +4,7 @@
 <?php if (isset($_COOKIE["cc_cookie_accept"])) : ?>
     <?php $GLOBALS['TL_BODY'][] = "
     <script>
-
+if($('#map').length){
     var mymap = L.map('map',{
             center:[51.40456,11.39146],
             fullscreenControl: true,
@@ -22,6 +22,7 @@
     mymap.scrollWheelZoom.disable();
     mymap.isFullscreen();
     mymap.toggleFullscreen();
+}
     </script>
 ";?>
 <?php else :?>
