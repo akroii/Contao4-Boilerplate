@@ -34,7 +34,7 @@ setTimeout(function() {
     browser_spellcheck: true,
     tabfocus_elements: ':prev,:next',
     importcss_append: true,
-    extended_valid_elements: 'q[cite|class|title],article,section,hgroup,figure,figcaption,i[class]/em',
+    extended_valid_elements: 'q[cite|class|title],article,section,hgroup,span,figure,figcaption,i[class]/em',
     menubar: 'file edit insert view format table',
     toolbar: 'link unlink | image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code'
   });
