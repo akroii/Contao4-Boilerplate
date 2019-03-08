@@ -21,3 +21,4 @@ if (!\BackendUser::getInstance()->isAdmin) {
 }
 #$GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_custom';
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['options']['eval']['allowHtml'] = true;
+$GLOBALS['TL_DCA']['tl_form_field']['fields']['label']['eval']['allowHtml'] = true;
