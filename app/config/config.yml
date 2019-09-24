@@ -6,16 +6,11 @@ contao:
             jpeg_quality: 100
 # Security configuration
 nelmio_security:
-    clickjacking:
-        paths:
-            '^/.*': ALLOW
-    content_type:
-        nosniff: false
-    referrer_policy:
-        enabled: true
-        policies:
-            - 'no-referrer-when-downgrade'
-            - 'strict-origin-when-cross-origin'
     xss_protection:
         enabled: true
         mode_block: true
+    forced_ssl:
+        enabled: true
+        hsts_max_age: 2592000
+        hsts_subdomains: true
+        redirect_status_code: 301
