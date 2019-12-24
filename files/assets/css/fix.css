@@ -4,7 +4,6 @@
 ::-moz-placeholder                      {color: #f3f1ee;opacity: 1;}
 :-moz-placeholder                       {color: #f3f1ee;opacity: 1;}
 img                                     {display: block;font-family: Helvetica, Arial, sans-serif;font-weight: 300;height: auto;line-height: 2;position: relative;text-align: center;width: 100%;}
-video[autoplay]:not([muted])            {display: none;}
 input[type="text"],
 input[type="url"],
 input[type="number"],
