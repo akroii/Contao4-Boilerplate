@@ -14,6 +14,19 @@ nelmio_security:
         hsts_max_age: 2592000
         hsts_subdomains: true
         redirect_status_code: 301
-    clickjacking:
-        paths:
-            '^/.*': ALLOW
+    csp:
+        enabled: true
+        hash:
+            algorithm: sha256
+        enforce:
+            level1_fallback: false
+            img-src:
+                - '* data: unsafe-inline'
+            default-src:
+                - '*'
+                - 'unsafe-eval'
+                - 'unsafe-inline'
+            script-src:
+                - '*'
+                - 'unsafe-eval'
+                - 'unsafe-inline'
