@@ -5,17 +5,17 @@ namespace Contao;
 if ($GLOBALS['TL_CONFIG']['useRTE']):
 
 ?>
-<script>window.tinymce || document.write('<script src="<?= TL_ASSETS_URL ?>assets/tinymce4/js/tinymce.min.js">\x3C/script>')</script>
+<script>window.tinymce || document.write('<script src="<?= $this->asset('js/tinymce.min.js', 'contao-components/tinymce4') ?>">\x3C/script>')</script>
 <script>
 setTimeout(function() {
   window.tinymce && tinymce.init({
     skin: 'contao',
-    cleanup : false,
     selector: '#<?= $this->selector ?>',
     language: '<?= Backend::getTinyMceLanguage() ?>',
     element_format: 'html',
     document_base_url: '<?= Environment::get('base') ?>',
     entities: '160,nbsp,60,lt,62,gt,173,shy',
+    paste_as_text: true,
     branding: false,
     setup: function(editor) {
       editor.getElement().removeAttribute('required');
@@ -29,14 +29,41 @@ setTimeout(function() {
     file_browser_callback: function(field_name, url, type, win) {
       Backend.openModalBrowser(field_name, url, type, win, '<?= $this->source ?>');
     },
+    templates: [
+      <?php echo Backend::getTinyTemplates(); ?>
+    ],
     file_browser_callback_types: <?= json_encode($this->fileBrowserTypes) ?>,
-    plugins: 'autosave charmap code fullscreen image importcss link lists paste searchreplace stripnbsp tabfocus table visualblocks',
+    content_css: 'system/themes/<?= Backend::getTheme() ?>/tinymce.min.css',
+    plugins: 'autosave charmap code fullscreen image importcss link lists paste searchreplace tabfocus table template visualblocks',
     browser_spellcheck: true,
     tabfocus_elements: ':prev,:next',
     importcss_append: true,
-    extended_valid_elements: 'q[cite|class|title],article,section,hgroup,span,figure,figcaption,i[class]/em',
-    menubar: 'file edit insert view format table',
-    toolbar: 'link unlink | image | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | undo redo | code'
+    importcss_selector_filter:".my-prefix-",
+    autosave_ask_before_unload: true,
+  //style_formats_merge: true,
+  style_formats: [
+    {title: 'Theme Styles', items:[
+      { title: 'Infobox | Warning', block: 'p', classes: 'infobox warning' },
+    { title: 'Infobox ', block: 'p', classes: 'infobox' },
+      { title: 'Button', selector: 'a', classes: 'btn' },
+      { title: 'Button | large', selector: 'a', classes: 'btn-large' },
+      { title: 'Text | large', selector: 'p', classes: 'text-l' },
+      { title: 'Text | large (inline)', inline: 'span', classes: 'text-l' },
+      { title: 'Text | xlarge', selector: 'p', classes: 'text-xl' },
+      { title: 'Text | xlarge (inline)', inline: 'span', classes: 'text-xl' },
+      { title: 'Text | highlight (inline)', inline: 'span', classes: 'text-highlight' },
+      { title: 'Text | links', selector: 'p', classes: 'text-left' },
+      { title: 'Text | center', selector: 'p', classes: 'text-center' },
+      { title: 'Text | rechts', selector: 'p', classes: 'text-rechts' },
+      { title: 'Item | center (inline)', inline: 'span', classes: 'feature-item' },
+
+    ]}
+  ],
+  //eigene blockformate
+  block_formats: 'Absatz=p;Überschrift 1=h1;Überschrift 2=h2;Überschrift 3=h3;Überschrift 4=h4;Überschrift 5=h5;Zitat=blockquote;Bereich=div',
+    extended_valid_elements: 'q[cite|class|title],article,section,hgroup,figure,figcaption',
+    menubar: 'insert format table',
+    toolbar: 'fullscreen | searchreplace | link unlink | formatselect | bold italic | alignjustify | bullist numlist outdent indent | styleselect | undo redo | code'
   });
 }, 0);
 </script>
