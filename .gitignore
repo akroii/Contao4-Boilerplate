@@ -8,6 +8,7 @@
 
 # Generated folders
 /app/*
+!/app/config/config.yml
 /assets/
 /files/assets/
 /system/
