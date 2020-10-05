@@ -1,0 +1,44 @@
+# IDE, System
+.DS_Store
+.idea
+
+# App config
+/app/config/parameters.yml
+/config/parameters.yml
+
+# Generated folders
+/app/*
+/assets/
+/files/assets/
+/system/
+!/system/config/
+/system/config/localconfig.php
+/system/config/tcpdf.php
+/vendor/
+
+# Symlinked resources
+/web/assets
+/web/bundles/
+/web/files/
+/web/share/
+/web/system/
+/web/vendor/
+/web/install.php
+/var/cache/*
+/var/
+
+# Skip files
+/system/modules/*/.skip
+
+# Composer package manager
+/composer/
+
+# Global xml
+/*.xml
+
+# Excludes
+!/app/AppKernel.php
+!/files/template/
+/files/template/*
+!/files/template/css/
+!/files/template/js/
