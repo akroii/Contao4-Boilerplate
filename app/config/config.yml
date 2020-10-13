@@ -1,5 +1,6 @@
 # Contao configuration
 contao:
+    #prepend_locale: true
     url_suffix: ''
     image:
         imagine_options:
