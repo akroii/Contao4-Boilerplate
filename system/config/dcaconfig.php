@@ -11,14 +11,10 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['published']['eval']['doNotCopy'] = f
 $GLOBALS['TL_DCA']['tl_page']['fields']['published']['eval']['doNotCopy'] = false;
 $GLOBALS['TL_LANG']['MSC']['copyOf'] = '%s';
 
-// Deaktivieren der Update-Anzeige für Nicht-Admins
-if (!\BackendUser::getInstance()->isAdmin) {
-	foreach ((array) $GLOBALS['TL_HOOKS']['getSystemMessages'] as $k => $arrHook) {
-		if ($arrHook[1] == 'versionCheck') {
-			unset($GLOBALS['TL_HOOKS']['getSystemMessages'][$k]);
-		}
-	}
-}
 #$GLOBALS['TL_DCA']['tl_content']['fields']['text']['eval']['rte'] = 'tinyMCE_custom';
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['options']['eval']['allowHtml'] = true;
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['label']['eval']['allowHtml'] = true;
+
+if (!\BackendUser::getInstance()->isAdmin) {
+
+}
