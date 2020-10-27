@@ -16,7 +16,6 @@ $GLOBALS['TL_DCA']['tl_form_field']['fields']['options']['eval']['allowHtml'] = 
 $GLOBALS['TL_DCA']['tl_form_field']['fields']['label']['eval']['allowHtml'] = true;
 
 if (\BackendUser::getInstance()->isAdmin) {
-
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['fields'][] = 'id';
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['fields'][] = 'alias';
 $GLOBALS['TL_DCA']['tl_page']['list']['label']['fields'][] = 'includeLayout';
@@ -27,9 +26,10 @@ $GLOBALS['TL_DCA']['tl_page']['list']['label']['format'] = '
 <span style="color: #ccc !important; font-weight:normal; padding-left: 3px;" title="Seiten-ID">[ID: %s]</span>
 <span style="color: #ccc !important; font-weight:normal; padding-left: 3px;" data-l="%.3s" title="Verwendetes Layout">[%5$s]</span>';
 
+$GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'id';
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'cssID';
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['fields'][] = 'alias';
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['format'] = '
-<span title="Artikel-Alias: %4$s">%1$s</span>
+<span title="Artikel-Alias: %5$s | id: %3$s">%1$s</span>
 <span style="color: #ccc !important; font-weight:normal; padding-left: 3px;" title="In Spalte">[%2$s]</span>';
 }
