@@ -26,10 +26,12 @@
 /web/system/
 /web/vendor/
 /web/install.php
+/web/app.php
+/web/contao-manager.phar.php
+/web/index.php
+/web/preview.php
 /var/cache/*
 /var/
-/web/
-!/web/.htaccess
 
 # Skip files
 /system/modules/*/.skip
