@@ -16,6 +16,7 @@
 /system/config/localconfig.php
 /system/config/tcpdf.php
 /vendor/
+/contao-manager/
 
 # Symlinked resources
 /web/assets
@@ -27,6 +28,8 @@
 /web/install.php
 /var/cache/*
 /var/
+/web/
+!/web/.htaccess
 
 # Skip files
 /system/modules/*/.skip
