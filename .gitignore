@@ -10,7 +10,6 @@
 /app/*
 !/app/config/config.yml
 /assets/
-/files/assets/
 /system/
 !/system/config/
 /system/config/localconfig.php
