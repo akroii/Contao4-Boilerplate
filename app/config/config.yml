@@ -5,6 +5,8 @@ contao:
     image:
         imagine_options:
             jpeg_quality: 100
+    localconfig:
+        timeZone: 'Europe/Berlin'
 # Security configuration
 nelmio_security:
     xss_protection:
