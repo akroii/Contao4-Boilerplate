@@ -1,0 +1,20 @@
+# Contao configuration
+contao:
+    #prepend_locale: true
+    url_suffix: ''
+    image:
+        imagine_options:
+            jpeg_quality: 100
+    localconfig:
+        timeZone: 'Europe/Berlin'
+# Security configuration
+nelmio_security:
+    csp:
+        enforce:
+            frame-ancestors:
+                - 'self'
+                - 'sandbox.local'
+                - 'sub.host.local'
+                - 'dev.host.de'
+                - 'stage.host.de'
+                - 'www.host.de'
