@@ -8,3 +8,7 @@ main ul {
 main ul li:before {
     content: "\0BB \020";
 }
+li::marker {
+    font-size: 0.7em;
+    color:fuchsia;
+}
