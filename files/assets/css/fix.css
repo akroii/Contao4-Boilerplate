@@ -13,13 +13,12 @@ input[type="submit"],
 select,
 input[type="email"], textarea           {-webkit-appearance: none;-webkit-border-radius: 0;-moz-appearance: none;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
 input:-webkit-autofill                  {-webkit-box-shadow: 0 0 0 1000px white inset;}
-.ce_gallery.nospacing                   {vertical-align:bottom;font-size:0}
 input:focus,
 select:focus,
 textarea:focus,
 button:focus                            {outline: none;}
-.ce_form .checkbox                      {-webkit-appearance:normal;}
+input[type="checkbox"]                  {-webkit-appearance:normal;}
 figure                                  {line-height:0;}
-hr                                      {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
-textarea                                {resize: vertical;}
-button                                  {background: none;border: 0;}
+hr                                      {display:block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}
+textarea                                {resize:vertical;}
+button                                  {background:none;border: 0;}
