@@ -1,3 +1,6 @@
 a, button {
     touch-action: manipulation;
 }
+input, select, textarea, option, button {
+    outline: none!important;
+}
