@@ -1,0 +1,9 @@
+<?php $this->extend('be_tinyMCE'); ?>
+<?php $this->block('custom'); ?>
+<?php $this->parent(); ?>
+    rel_list: [
+        {title: '--', value: ''},
+        {title: 'nofollow', value: 'nofollow'},
+        {title: 'follow', value: 'follow'}
+    ],
+<?php $this->endblock(); ?>
