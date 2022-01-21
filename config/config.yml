@@ -7,6 +7,7 @@ contao:
             jpeg_quality: 100
     localconfig:
         timeZone: 'Europe/Berlin'
+        logPeriod: 15778463
 # Security configuration
 nelmio_security:
     csp:
