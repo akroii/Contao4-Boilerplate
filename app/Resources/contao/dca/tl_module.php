@@ -1,6 +1,6 @@
 <?php
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-
+$GLOBALS['TL_DCA']['tl_module']['fields']['id']['search'] = true;
 $GLOBALS['TL_DCA']['tl_module']['fields']['placeholder'] = [
     'label' => ['Placeholder-Text', 'Welcher Text soll als Platzhalter in dem Eingabefeld stehen?'],
     'inputType' => 'text',
